@@ -27,3 +27,5 @@
 
 /* v9: checklist, speech and trash */
 .voiceRow{display:flex;align-items:center;gap:10px;margin:8px 0 12px}.voiceRow button{flex:none}.questionChecklist{border:1px solid #dbe4ee;border-radius:12px;padding:10px 12px;margin:12px 0}.questionChecklist legend{font-weight:600;padding:0 6px}.questionChecklist .checkItem{display:flex;align-items:center;gap:10px;margin:5px 0;padding:5px 0;font-size:14px;cursor:pointer}.questionChecklist input[type=checkbox]{display:inline-block;width:20px;height:20px;min-height:0;margin:0;flex:none;accent-color:#2159a0}.checkSummary{font-size:12px;color:#28614e}
+
+.trashActions{display:flex;gap:8px;flex-wrap:wrap}.trashActions button{flex:1;min-width:125px}
