@@ -75,3 +75,6 @@ html[data-theme=dark] nav button{color:#a6bad0}html[data-theme=dark] nav button.
 
 /* v22: dark-mode viewport must stay dark when a tab has little content */
 :root{background:var(--page)}html{min-height:100%;background:var(--page)}body{min-height:100dvh;background:var(--page)}main{min-height:calc(100dvh - 150px);background:var(--page)}
+
+/* v24: multi-select trash */
+.trashBulk{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:14px 0}.trashBulk .trashAll,.trashEntry .trashCheck{display:flex;align-items:center;gap:10px;margin:0;cursor:pointer}.trashBulk input[type=checkbox],.trashEntry input[type=checkbox]{width:20px;height:20px;min-height:20px;margin:0;flex:none;accent-color:#2875c7}.trashBulk button{min-width:170px;flex:1}.trashBulk button:disabled{opacity:.45;cursor:default}.trashEntry .trashCheck{font-size:15px}.trashEntry .trashCheck span{min-width:0}.trashEntry .trashCheck small{font-weight:400;color:var(--muted)}.trashEntry>p{margin:10px 0}.trashEntry>button{width:100%}
