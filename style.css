@@ -5,3 +5,9 @@
 /* Hide native file inputs, including Android/WebView user-agent styles. */
 #photos,#galleryPhotos{display:none!important;visibility:hidden!important;position:absolute!important;width:0!important;height:0!important;opacity:0!important;pointer-events:none!important}
 .attachmentRow{gap:8px}.attachmentHint{flex:1;min-width:85px}.attachmentBtn{flex:none}.attachmentGallery{flex:none;padding:10px 12px}
+
+/* Native file inputs occupy the tap area: Android handles their own trusted click. */
+.attachmentRow .cameraPick,.attachmentRow .galleryPick{position:relative;overflow:hidden;cursor:pointer;box-sizing:border-box}
+.attachmentRow .cameraPick{background:#2159a0;color:#fff;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;min-height:48px;padding:0;border-radius:13px;flex:none}
+.attachmentRow .galleryPick{display:inline-flex;align-items:center;justify-content:center;background:#eaf0f8;color:#214f86;border-radius:10px;font:inherit;font-weight:600;padding:10px 12px;min-height:43px;flex:none}
+.attachmentRow #photos,.attachmentRow #galleryPhotos{display:block!important;visibility:visible!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;opacity:0!important;pointer-events:auto!important;cursor:pointer!important;z-index:2!important;margin:0!important;padding:0!important;font-size:100px!important}
