@@ -13,6 +13,14 @@ Deno.serve(async req=>{
  if(b.action==='pull'){const tables=['tc_companies','tc_entries','tc_photos'];const out:any={};for(const [i,t] of tables.entries()){const {data,error}=await db.from(t).select('data').limit(5000);if(error)throw error;out[['companies','entries','photos'][i]]=(data||[]).map(x=>x.data)}return respond(out)}
  if(b.action==='push'){if(!['companies','entries'].includes(b.table)||!b.record?.id)return respond({error:'Invalid record'},400);const r=b.record;const table=b.table==='companies'?'tc_companies':'tc_entries';if(b.table==='entries'&&!/^[0-9a-f-]{36}$/i.test(r.id))return respond({error:'Invalid ID'},400);const {error}=await db.from(table).upsert({id:r.id,data:r});if(error)throw error;return respond({ok:true})}
  if(b.action==='photo'){const p=b.record;if(!p?.id||!p?.entryId)return respond({error:'Invalid photo'},400);if(b.data){const raw=Uint8Array.from(atob(b.data),c=>c.charCodeAt(0));if(raw.length>10_485_760)return respond({error:'Photo too large'},413);const {error}=await db.storage.from('tc-photos').upload(p.id+'.jpg',raw,{contentType:'image/jpeg',upsert:true});if(error)throw error}if(p.deleted)await db.storage.from('tc-photos').remove([p.id+'.jpg']);const {error}=await db.from('tc_photos').upsert({id:p.id,data:p});if(error)throw error;return respond({ok:true})}
+ if(b.action==='purgeEntry'){const id=b.id;if(typeof id!=='string'||!/^[0-9a-f-]{36}$/i.test(id))return respond({error:'Invalid ID'},400);
+ const {data:record,error:readError}=await db.from('tc_entries').select('data').eq('id',id).maybeSingle();if(readError)throw readError;if(!record)return respond({ok:true,alreadyDeleted:true});
+ if(!record.data?.deleted)return respond({error:'Move entry to trash before permanent deletion'},409);
+ const {data:related,error:photosError}=await db.from('tc_photos').select('id,data').limit(5000);if(photosError)throw photosError;
+ const photoIds=(related||[]).filter(p=>p.data?.entryId===id).map(p=>p.id);
+ if(photoIds.length){const {error:storageError}=await db.storage.from('tc-photos').remove(photoIds.map(id=>id+'.jpg'));if(storageError)throw storageError;
+ const {error:photoDeleteError}=await db.from('tc_photos').delete().in('id',photoIds);if(photoDeleteError)throw photoDeleteError}
+ const {error:entryDeleteError}=await db.from('tc_entries').delete().eq('id',id);if(entryDeleteError)throw entryDeleteError;return respond({ok:true})}
  if(b.action==='getPhoto'){const {data,error}=await db.storage.from('tc-photos').download(b.id+'.jpg');if(error)return respond({data:null});const bytes=new Uint8Array(await data.arrayBuffer());let binary='';for(let i=0;i<bytes.length;i+=8192)binary+=String.fromCharCode(...bytes.slice(i,i+8192));return respond({data:btoa(binary)})}
  return respond({error:'Unknown action'},400)
  }catch(e){console.error(e);return respond({error:'Server operation failed'},500)}
