@@ -1,0 +1,202 @@
+[
+  {
+    "id": "F101",
+    "name": "ВИСОМ",
+    "category": "C · Вибрация",
+    "route": "📍 Маршрут 1 · Стенды F101–F149",
+    "site": "https://www.visom.ru",
+    "email": "info@visom.ru"
+  },
+  {
+    "id": "F133",
+    "name": "ХАНЧЖОУ АЙХУА",
+    "category": "C · Вибрация",
+    "route": "📍 Маршрут 1 · Стенды F101–F149",
+    "site": "https://www.hzaihua.com",
+    "email": "jack@hzaihua.com"
+  },
+  {
+    "id": "F135",
+    "name": "БСКБ «ВЕГА»",
+    "category": "B + J · Испытательное / Авто-датчики",
+    "route": "📍 Маршрут 1 · Стенды F101–F149",
+    "site": "https://www.bskb-vega.ru",
+    "email": "zakaz@bskb-vega.ru"
+  },
+  {
+    "id": "F223",
+    "name": "ЭКСИТОН ТЕСТ",
+    "category": "B + H · Испытательное / Металлография",
+    "route": "📍 Маршрут 2 · Стенды F203–F243",
+    "site": "https://www.exiton-test.ru",
+    "email": "info@exiton-test.ru"
+  },
+  {
+    "id": "F237",
+    "name": "СМ Климат",
+    "category": "D · Климат",
+    "route": "📍 Маршрут 2 · Стенды F203–F243",
+    "site": "https://www.sm-climat.ru",
+    "email": "info@sm-climat.ru"
+  },
+  {
+    "id": "F243",
+    "name": "ПРОоборудование",
+    "category": "D · Климат",
+    "route": "📍 Маршрут 2 · Стенды F203–F243",
+    "site": "https://www.zavod-prooborudovanie.ru",
+    "email": "info@zavod-prooborudovanie.ru"
+  },
+  {
+    "id": "F330",
+    "name": "ВЕЛМАТЭК",
+    "category": "H · Металлография",
+    "route": "📍 Маршрут 3 · Стенды F301–F337",
+    "site": "https://www.velmatec.ru",
+    "email": "lab@velmatec.ru"
+  },
+  {
+    "id": "F331",
+    "name": "DONGLING TECHNOLOGIES",
+    "category": "C + J · Вибрация / Авто-датчики",
+    "route": "📍 Маршрут 3 · Стенды F301–F337",
+    "site": "https://www.donglingtech.com",
+    "email": "tracy.hu@donglingtech.com"
+  },
+  {
+    "id": "F411",
+    "name": "ЭКО-ТЕСТ ХОЛДИНГ",
+    "category": "J · Авто-датчики",
+    "route": "📍 Маршрут 4 · Стенды F411–F431",
+    "site": "https://www.emftest.ru",
+    "email": "sale@emftest.ru"
+  },
+  {
+    "id": "F415",
+    "name": "ЛАБОРТЕК",
+    "category": "H · Металлография",
+    "route": "📍 Маршрут 4 · Стенды F411–F431",
+    "site": "https://www.labortek.ru",
+    "email": "info@labortek.ru"
+  },
+  {
+    "id": "F431",
+    "name": "ТЕСТА",
+    "category": "D · Климат",
+    "route": "📍 Маршрут 4 · Стенды F411–F431",
+    "site": "https://www.testa7.ru",
+    "email": "info@testa7.ru"
+  },
+  {
+    "id": "F519",
+    "name": "РЕОМ",
+    "category": "D · Климат",
+    "route": "📍 Маршрут 5 · Стенды F501–F531",
+    "site": "https://www.npf-reom.ru",
+    "email": "npf@reom.ru"
+  },
+  {
+    "id": "F521",
+    "name": "БЛМ СИНЕРЖИ",
+    "category": "D · Климат",
+    "route": "📍 Маршрут 5 · Стенды F501–F531",
+    "site": "https://www.bims.ru",
+    "email": "sales@blms.ru"
+  },
+  {
+    "id": "F523",
+    "name": "ДИАГНОСТИКА НПК",
+    "category": "B + J · Испытательное / Авто-датчики",
+    "route": "📍 Маршрут 5 · Стенды F501–F531",
+    "site": "https://www.npk-spb.ru",
+    "email": "info@npk-spb.ru"
+  },
+  {
+    "id": "F531",
+    "name": "ТРИБОТЕСТ",
+    "category": "B + H · Испытательное / Трение",
+    "route": "📍 Маршрут 5 · Стенды F501–F531",
+    "site": "https://www.tribotest.ru",
+    "email": "info@tribotest.ru"
+  },
+  {
+    "id": "F601",
+    "name": "МАШПРОМ",
+    "category": "B · Испытательное",
+    "route": "📍 Маршрут 6 · Стенды F601–F607",
+    "site": "https://www.mashlab.ru",
+    "email": "info@mashlab.ru"
+  },
+  {
+    "id": "F329",
+    "name": "ГОСТ",
+    "category": "B · Испытательное",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.gost-lab.com",
+    "email": "mail@gost-lab.com"
+  },
+  {
+    "id": "F425",
+    "name": "ТЕСТСИСТЕМЫ",
+    "category": "B · Испытательное",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.test-systems.ru",
+    "email": "rill@test-systems.ru"
+  },
+  {
+    "id": "F215",
+    "name": "ЭЛЬФМЕК",
+    "category": "B · Испытательное",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.elfmec.ru",
+    "email": "info@elfmec.ru"
+  },
+  {
+    "id": "F233",
+    "name": "ГЛОБАЛТЕСТ",
+    "category": "C · Вибрация",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.globaltest.ru",
+    "email": "mail@globaltest.ru"
+  },
+  {
+    "id": "F419",
+    "name": "ООО ГТЛАБ",
+    "category": "C · Вибрация",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.gtlab.pro",
+    "email": "info@gtlab.pro"
+  },
+  {
+    "id": "F319",
+    "name": "МАХА РУССИА",
+    "category": "J · Авто-датчики",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.maha.ru",
+    "email": "mail@maha.ru"
+  },
+  {
+    "id": "F309",
+    "name": "УНИВЕРСАЛ ПРИБОР",
+    "category": "D · Климат",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.pribor.ru",
+    "email": "pribor@pribor.ru"
+  },
+  {
+    "id": "F127",
+    "name": "ЭРСТВАК",
+    "category": "D · Климат",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.erstvak.com",
+    "email": "info@erstvak.com"
+  },
+  {
+    "id": "F219",
+    "name": "СМОЛЕНСКОЕ СКТБ СПУ",
+    "category": "D · Климат",
+    "route": "📍 Остальные стенды (по номерам)",
+    "site": "https://www.sktb-spu.ru",
+    "email": "sale@sktb-spu.ru"
+  }
+]
