@@ -60,3 +60,6 @@ html[data-theme=dark] nav button{color:#a6bad0}html[data-theme=dark] nav button.
 
 /* Website icon beside visit status */
 .companyTop{flex:1;min-width:0}.company{display:flex;flex-wrap:wrap;align-items:stretch}.companyTop{width:auto}.company .details{flex:0 0 100%;min-width:0}.siteIcon{align-self:center;flex:none;width:39px;height:39px;min-height:39px;padding:0;justify-content:center;margin-right:7px}.companyTop .status{white-space:nowrap;font-size:17px;font-weight:700}
+
+/* Unified company expand chevron */
+.expandChevron{display:inline-flex;align-items:center;justify-content:center;flex:none;width:22px;height:32px;color:var(--muted)}.expandChevron svg{display:block;transition:transform .2s ease}.company.isExpanded .expandChevron svg{transform:rotate(180deg)}
