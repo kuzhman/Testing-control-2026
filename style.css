@@ -29,3 +29,31 @@
 .voiceRow{display:flex;align-items:center;gap:10px;margin:8px 0 12px}.voiceRow button{flex:none}.questionChecklist{border:1px solid #dbe4ee;border-radius:12px;padding:10px 12px;margin:12px 0}.questionChecklist legend{font-weight:600;padding:0 6px}.questionChecklist .checkItem{display:flex;align-items:center;gap:10px;margin:5px 0;padding:5px 0;font-size:14px;cursor:pointer}.questionChecklist input[type=checkbox]{display:inline-block;width:20px;height:20px;min-height:0;margin:0;flex:none;accent-color:#2159a0}.checkSummary{font-size:12px;color:#28614e}
 
 .trashActions{display:flex;gap:8px;flex-wrap:wrap}.trashActions button{flex:1;min-width:125px}
+
+/* v11 themes and sticky primary actions */
+:root{color-scheme:light;--surface:#fff;--surface-alt:#f7faff;--page:#f4f7fb;--text:#172a40;--muted:#667b91;--border:#dfe7f1;--field:#fff;--secondary-bg:#eaf0f8;--secondary-text:#214f86;--header:#173963;--nav:#fff}
+html{background:var(--page);color:var(--text)}body{background:var(--page);color:var(--text)}
+header{background:var(--header)}.headerTools{display:flex;align-items:center;gap:7px;flex-wrap:wrap;justify-content:flex-end}
+#themeMode{width:auto;min-height:34px;padding:5px 8px;background:#ffffff1c;border:1px solid #ffffff40;color:white;border-radius:9px;font-size:12px;cursor:pointer}
+#themeMode option{background:var(--surface);color:var(--text)}
+.overview,.panel,.company{background:var(--surface);border-color:var(--border)}
+.entry{background:var(--surface-alt);border-color:var(--border)}.companyTop{background:var(--surface);color:var(--text)}
+input,select,textarea{background:var(--field);color:var(--text);border-color:var(--border)}
+.entry small,.hint,.groupTitle{color:var(--muted)}
+.secondary,.iconBtn,.importLabel{background:var(--secondary-bg);color:var(--secondary-text)}
+nav{background:var(--nav);border-color:var(--border)}nav button{background:var(--nav)}
+dialog{background:var(--surface);color:var(--text)}.questionChecklist{border-color:var(--border)}
+#editor .attachmentRow>label.galleryPick{background:var(--secondary-bg)!important;color:var(--secondary-text)!important}
+.stickyCompany{position:sticky;bottom:calc(78px + env(safe-area-inset-bottom));z-index:6;padding:5px 0;background:linear-gradient(transparent,var(--page) 22%)}
+.stickyCompany #addCompany{margin:0;box-shadow:0 4px 18px #0002}
+#editor .editorActions{position:sticky;bottom:-18px;z-index:3;background:var(--surface);padding:12px 0 calc(12px + env(safe-area-inset-bottom));margin-bottom:-18px;box-shadow:0 -10px 20px -15px #0005}
+#editor .editorActions #saveEntry{box-shadow:0 3px 12px #0002}
+.companyLinks{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:8px 0 12px}
+.siteButton{display:inline-flex;align-items:center;gap:8px;background:var(--secondary-bg);color:var(--secondary-text);border:1px solid var(--border);border-radius:10px;padding:10px 13px;text-decoration:none;font-size:13px;font-weight:650;min-height:42px}
+.siteButton:hover{filter:brightness(.95)}
+html[data-theme=dark]{color-scheme:dark;--surface:#1b293a;--surface-alt:#223247;--page:#101b2a;--text:#e8eff8;--muted:#afc1d4;--border:#354a62;--field:#18283b;--secondary-bg:#2b4563;--secondary-text:#e2edff;--header:#0e243e;--nav:#18283b}
+html[data-theme=dark] .stand{background:#304b6c;color:#d6e7ff}
+html[data-theme=dark] .status{color:#75dbad}
+html[data-theme=dark] .track{background:#354a62}
+html[data-theme=dark] nav button{color:#a6bad0}html[data-theme=dark] nav button.selected{color:#8bbaff}
+@media(max-width:430px){header{gap:5px;padding:11px 12px}header strong{font-size:14px}header small{font-size:10px}.sync{font-size:10px;padding:6px 8px}#themeMode{max-width:100px}}
