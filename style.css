@@ -72,3 +72,6 @@ html[data-theme=dark] nav button{color:#a6bad0}html[data-theme=dark] nav button.
 
 /* v18: map stays full width but no longer traps vertical page scrolling */
 .mapCanvas{height:clamp(290px,43dvh,440px);min-height:0;touch-action:pan-y}.mapCanvas>svg{touch-action:pan-y}.mapCanvas.mapInteracting,.mapCanvas.mapInteracting>svg{touch-action:none}.mapTools{flex-wrap:wrap}.mapTools button{font-size:13px}.mapTools #mapGesture[aria-pressed="true"]{background:#2d70ae;color:white}.mapSelection .entry{margin-top:12px}.mapSelection .entry button{margin-top:10px}.mapSelection .companyDescription{line-height:1.5}.mapSelection{scroll-margin-top:90px}
+
+/* v22: dark-mode viewport must stay dark when a tab has little content */
+:root{background:var(--page)}html{min-height:100%;background:var(--page)}body{min-height:100dvh;background:var(--page)}main{min-height:calc(100dvh - 150px);background:var(--page)}
