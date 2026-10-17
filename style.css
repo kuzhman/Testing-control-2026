@@ -11,3 +11,10 @@
 .attachmentRow .cameraPick{background:#2159a0;color:#fff;display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;min-height:48px;padding:0;border-radius:13px;flex:none}
 .attachmentRow .galleryPick{display:inline-flex;align-items:center;justify-content:center;background:#eaf0f8;color:#214f86;border-radius:10px;font:inherit;font-weight:600;padding:10px 12px;min-height:43px;flex:none}
 .attachmentRow #photos,.attachmentRow #galleryPhotos{display:block!important;visibility:visible!important;position:absolute!important;inset:0!important;width:100%!important;height:100%!important;min-height:0!important;opacity:0!important;pointer-events:auto!important;cursor:pointer!important;z-index:2!important;margin:0!important;padding:0!important;font-size:100px!important}
+
+/* Two equal-width icon buttons for camera and gallery */
+.attachmentRow{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:10px!important;width:100%!important;align-items:stretch!important;margin:14px 0!important}
+.attachmentRow .cameraPick,.attachmentRow .galleryPick{width:100%!important;height:54px!important;min-height:54px!important;border-radius:11px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important;margin:0!important;box-sizing:border-box!important}
+.attachmentRow .cameraPick{background:#2159a0!important;color:#fff!important}
+.attachmentRow .galleryPick{background:#eaf0f8!important;color:#214f86!important}
+.attachmentRow .attachmentHint{display:none!important}
